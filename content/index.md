@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Aeloria
 ---
 
-This is a blank Quartz installation.
+I'm still figuring this out.
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
