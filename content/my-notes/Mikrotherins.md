@@ -4,4 +4,4 @@ A highly rare creature said to contains vast amounts of magic in it's infinitesi
 
 
 
-[tardigrade-large](content/my-notes/tardigrade-large.jpg) 
+[Mikrotherins](content/my-notes/Mikrotherins.jpg) 
