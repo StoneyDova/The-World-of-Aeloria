@@ -4,7 +4,6 @@ longform:
   title: my-notes
   workflow: Default Workflow
   sceneFolder: /
-  scenes:
-    - The World of Aeloria
+  scenes: []
   ignoredFiles: []
 ---
