@@ -1,1 +1,1 @@
-Massive trees standing at over 450ft, these tree's only grow in Northern [Elaria](content/my-notes/Elaria.md) and some [Skylands](content/my-notes/Skylands.md). 
+Massive trees standing at over 450ft, these tree's only grow in Northern [Elaria](content/my-notes/Elaria.md) and [Skylands](content/my-notes/Skylands.md) 
