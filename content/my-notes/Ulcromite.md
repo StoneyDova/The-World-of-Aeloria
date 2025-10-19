@@ -1,0 +1,1 @@
+A non magical stone capable of storing huge amounts of magical power that can be utilized in a variety of ways when coupled machines capable of directing that power. Its was discovered on the continent of [Elaria](Elaria.md) in deep underground [Ulcromite Caverns](Ulcromite Caverns.md) discovered by the farmers of the region. 
