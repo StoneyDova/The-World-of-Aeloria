@@ -10,7 +10,8 @@ As life on the planet sprang forth [[The Divine Ones]] began to stir until event
 
 Soon the Twin Gods of Storms and Sea,  [[Valerax]] and [[Lysanor]] respectively began to stir, causing massive storms and typhoons soon after when they fully awoke and began a 100 year wresting match that ended in a draw. The waves they caused were so massive and large it left the early aquatic life scattered and displaced all over the planet with many species dying after ending up on dry land. The ones who survived and adapted are the ancestors to all humanoid races on earth. As the brothers ended their cataclysmic horseplay they each came to settle where they had landed, two neighboring continents only separated by a small ocean. 
 
-test 2
+why
+
 
 
 
