@@ -6,4 +6,5 @@ Soon after his 25th birthday the facade fell and the queen learned of the deceit
 
 All of this happening in a weeks time, Edrin found himself headed towards this forieng lands knowing the implication was that if he failed, his family would be killed. He had 5 years to return successfully. As he entered the continent he headed towards [[Elarian Spire]] where he was soon captured and imprisoned in [[The moss tower]] where he was imprisoned for 3 years, being experimented on to test the ways Ulcromite could be used, on of the experiments resulting in his arm being replaced with a mechanical arm powered by a small Ulcromite core, meaning removing it would like leaded to his death. After 3 long years of sharpening his skills he's finally ready to make his escape and is determined to return home with Ulcromite in 2 years before his parents are killed, even if it means ripping his arm off and digging the stone from its metal housing to appease the mad queen and free his family or die in the process. 
 
-im not a coder 
+im not a coder but i am determined
+
