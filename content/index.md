@@ -1,6 +1,7 @@
 ---
-title: Welcome to Quartz
+title: The World of Aeloria
 ---
 
-This is a blank Quartz installation.
+Welcome adventurers and weary travelers, to The World of Aeloria.
+
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
