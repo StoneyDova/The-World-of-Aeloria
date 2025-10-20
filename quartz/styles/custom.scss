@@ -1,6 +1,6 @@
 @use "./base.scss";
 
-/* Safe Rotating Fantasy Backgrounds - CSS Only - Zero Risk */
+/* Enhanced Frame & Panel System - Zero Risk */
 body {
   animation: backgroundRotate 120s infinite;
   background-size: cover;
@@ -9,6 +9,20 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+/* Add semi-transparent overlay to make backgrounds more frame-like */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay to push backgrounds back */
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes backgroundRotate {
@@ -18,7 +32,7 @@ body {
   27%, 35% { background-image: url('https://i.pinimg.com/564x/ea/c4/3c/eac43c75d18cf745bd58c0e64db6d98a.jpg'); }
   36%, 44% { background-image: url('https://live.staticflickr.com/4188/34306721822/3752b8b999_c.jpg'); }
   45%, 53% { background-image: url('https://i.postimg.cc/6qZQRgz1/Lich.jpg'); }
-  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1uGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
+  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1eGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
   63%, 71% { background-image: url('https://2warpstoneptune.com/wp-content/uploads/2015/05/art-of-dd078.jpg'); }
   72%, 80% { background-image: url('https://media.craiyon.com/2025-08-14/OmA8MpvQTLmEi_RVULzvsw.webp'); }
   81%, 89% { background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/5cae1a10028511.560de4ade4737.jpg'); }
@@ -26,67 +40,120 @@ body {
   99%, 100% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg'); }
 }
 
+/* Enhanced Panel System - Solid backgrounds for all content */
 [data-theme="light"] {
-  .sidebar, .page > .content, .page-header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
+  /* Main content panels - SOLID backgrounds */
+  .sidebar, .page > .content, .page-header, .graph {
+    background: #ffffff !important; /* Pure white solid background */
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+  
+  .page > .content { 
+    padding: 2.5rem; 
+    background: #fefefe !important; /* Slightly off-white for content area */
+  }
+  
+  /* Text elements - High contrast */
+  .article-title, .breadcrumb-container, .content-meta, 
+  article, .page-title, .explorer, .graph h3, footer,
+  .popover-hint, .breadcrumb-container a, .page-title a,
+  .page-title a:hover, .breadcrumb-container a:hover,
+  h1, h2, h3, h4, h5, h6, p, li, span, td, th, .table {
+    color: #1a1a1a !important; /* Near-black for maximum contrast */
+    text-shadow: none !important; /* Remove any text shadows */
+  }
+  
+  /* Code blocks and special elements */
+  pre, code, .code-line, .code-line span {
+    background: #f8f8f8 !important;
+    color: #2d3748 !important;
+    border: 1px solid #e2e8f0;
+  }
+  
+  /* Graph container - ensure visibility */
+  .graph-outer, .graph-container {
+    background: #ffffff !important;
     border-radius: 8px;
-    margin: 1rem;
     padding: 1rem;
   }
-  .page > .content { padding: 2rem; }
 }
 
 [data-theme="dark"] {
-  .sidebar, .page > .content, .page-header {
-    background: rgba(0, 0, 0, 0.92);
-    backdrop-filter: blur(12px);
+  /* Main content panels - SOLID dark backgrounds */
+  .sidebar, .page > .content, .page-header, .graph {
+    background: #1a1a1a !important; /* Solid dark gray */
+    border: 2px solid #333333;
+    border-radius: 12px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+  
+  .page > .content { 
+    padding: 2.5rem; 
+    background: #222222 !important; /* Slightly lighter for content */
+  }
+  
+  /* Text elements - High contrast white */
+  .article-title, .breadcrumb-container, .content-meta, 
+  article, .page-title, .explorer, .graph h3, footer,
+  .popover-hint, .breadcrumb-container a, .page-title a,
+  .page-title a:hover, .breadcrumb-container a:hover,
+  h1, h2, h3, h4, h5, h6, p, li, span, td, th, .table {
+    color: #f0f0f0 !important; /* Bright white for maximum contrast */
+    text-shadow: none !important; /* Remove any text shadows */
+  }
+  
+  /* Code blocks and special elements */
+  pre, code, .code-line, .code-line span {
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040;
+  }
+  
+  /* Links with good contrast */
+  a { 
+    color: #64b5f6 !important; /* Bright blue */
+  }
+  
+  a:hover { 
+    color: #90caf9 !important; 
+    text-decoration: underline;
+  }
+  
+  /* Graph container */
+  .graph-outer, .graph-container {
+    background: #1a1a1a !important;
     border-radius: 8px;
-    margin: 1rem;
     padding: 1rem;
   }
-  .page > .content { padding: 2rem; }
 }
 
-/* Fix 1+3: Simple selectors + Pure black/white text */
-[data-theme="light"] .article-title,
-[data-theme="light"] .breadcrumb-container,
-[data-theme="light"] .content-meta,
-[data-theme="light"] article,
-[data-theme="light"] .page-title,
-[data-theme="light"] .explorer,
-[data-theme="light"] .graph h3,
-[data-theme="light"] footer,
-[data-theme="light"] .popover-hint,
-[data-theme="light"] .breadcrumb-container a,
-[data-theme="light"] .page-title a {
-  color: #000000 !important;
+/* Ensure all interactive elements have proper backgrounds */
+.popover, .search-result, .suggestion-item {
+  background: inherit !important;
+  border: 1px solid;
 }
 
-[data-theme="dark"] .article-title,
-[data-theme="dark"] .breadcrumb-container,
-[data-theme="dark"] .content-meta,
-[data-theme="dark"] article,
-[data-theme="dark"] .page-title,
-[data-theme="dark"] .explorer,
-[data-theme="dark"] .graph h3,
-[data-theme="dark"] footer,
-[data-theme="dark"] .popover-hint,
-[data-theme="dark"] .breadcrumb-container a,
-[data-theme="dark"] .page-title a {
-  color: #ffffff !important;
+[data-theme="light"] .popover, 
+[data-theme="light"] .search-result, 
+[data-theme="light"] .suggestion-item {
+  border-color: #e0e0e0;
 }
 
-[data-theme="dark"] a { color: #a8d1ff !important; }
-[data-theme="dark"] a:hover { color: #ffffff !important; }
-
-/* Fix 4: Targeted graph fix */
-.graph-outer {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border-radius: 8px;
-  padding: 1rem;
+[data-theme="dark"] .popover, 
+[data-theme="dark"] .search-result, 
+[data-theme="dark"] .suggestion-item {
+  border-color: #333333;
 }
 
-[data-theme="dark"] .graph-outer {
-  background: rgba(0, 0, 0, 0.95) !important;
+/* Graph text visibility */
+.graph h3 {
+  color: inherit !important;
+  margin-bottom: 1rem !important;
+  font-weight: 600;
 }
