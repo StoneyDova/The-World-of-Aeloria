@@ -1,179 +1,94 @@
 @use "./base.scss";
 
-/* ULTRA AGGRESSIVE PANEL SYSTEM - FORCE STYLES TO APPLY */
-html body {
-  animation: backgroundRotate 120s infinite !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  position: relative !important;
+/* KEEP WORKING BACKGROUND SYSTEM */
+body {
+  animation: backgroundRotate 120s infinite;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-/* Force dark overlay */
-html body::before {
-  content: '' !important;
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  background: rgba(0, 0, 0, 0.4) !important;
-  z-index: -1 !important;
-  pointer-events: none !important;
+/* KEEP WORKING OVERLAY */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes backgroundRotate {
-  0%, 8% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg') !important; }
-  9%, 17% { background-image: url('https://newretrowave.com/wp-content/uploads/2020/05/dragon-slayers-larry-elmore-740x1024.jpg') !important; }
-  18%, 26% { background-image: url('https://i.redd.it/w0f8m8hy3if31.jpg') !important; }
-  27%, 35% { background-image: url('https://i.pinimg.com/564x/ea/c4/3c/eac43c75d18cf745bd58c0e64db6d98a.jpg') !important; }
-  36%, 44% { background-image: url('https://live.staticflickr.com/4188/34306721822/3752b8b999_c.jpg') !important; }
-  45%, 53% { background-image: url('https://i.postimg.cc/6qZQRgz1/Lich.jpg') !important; }
-  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1eGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU') !important; }
-  63%, 71% { background-image: url('https://2warpstoneptune.com/wp-content/uploads/2015/05/art-of-dd078.jpg') !important; }
-  72%, 80% { background-image: url('https://media.craiyon.com/2025-08-14/OmA8MpvQTLmEi_RVULzvsw.webp') !important; }
-  81%, 89% { background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/5cae1a10028511.560de4ade4737.jpg') !important; }
-  90%, 98% { background-image: url('https://i.redd.it/b0566dl3sw121.jpg') !important; }
-  99%, 100% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg') !important; }
+  0%, 8% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg'); }
+  9%, 17% { background-image: url('https://newretrowave.com/wp-content/uploads/2020/05/dragon-slayers-larry-elmore-740x1024.jpg'); }
+  18%, 26% { background-image: url('https://i.redd.it/w0f8m8hy3if31.jpg'); }
+  27%, 35% { background-image: url('https://i.pinimg.com/564x/ea/c4/3c/eac43c75d18cf745bd58c0e64db6d98a.jpg'); }
+  36%, 44% { background-image: url('https://live.staticflickr.com/4188/34306721822/3752b8b999_c.jpg'); }
+  45%, 53% { background-image: url('https://i.postimg.cc/6qZQRgz1/Lich.jpg'); }
+  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1eGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
+  63%, 71% { background-image: url('https://2warpstoneptune.com/wp-content/uploads/2015/05/art-of-dd078.jpg'); }
+  72%, 80% { background-image: url('https://media.craiyon.com/2025-08-14/OmA8MpvQTLmEi_RVULzvsw.webp'); }
+  81%, 89% { background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/5cae1a10028511.560de4ade4737.jpg'); }
+  90%, 98% { background-image: url('https://i.redd.it/b0566dl3sw121.jpg'); }
+  99%, 100% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg'); }
 }
 
-/* FORCE SOLID PANELS - TARGET EVERYTHING */
-html body [data-theme="light"],
-html body [data-theme="light"] * {
-  /* Main content areas */
-  & .sidebar, 
-  & .page > .content, 
-  & .page-header, 
-  & .graph,
-  & .popover,
-  & .search-result,
-  & .suggestion-item {
-    background: #ffffff !important;
-    border: 3px solid #d0d0d0 !important;
-    border-radius: 15px !important;
-    margin: 2rem !important;
-    padding: 2rem !important;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+/* STEP 1: JUST MAKE EXISTING PANELS MORE SOLID AND VISIBLE */
+[data-theme="light"] {
+  .sidebar, .page > .content, .page-header, .graph {
+    background: #ffffff !important; /* SOLID white instead of transparent */
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border: 2px solid #e0e0e0 !important; /* Add border */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important; /* Add shadow */
   }
-
-  /* Content area emphasis */
-  & .page > .content {
-    background: #f8f8f8 !important;
-    padding: 3rem !important;
-    border: 4px solid #c0c0c0 !important;
+  
+  .page > .content { 
+    padding: 2rem; 
   }
-
-  /* FORCE TEXT VISIBILITY */
-  & .article-title,
-  & .breadcrumb-container,
-  & .content-meta,
-  & article,
-  & .page-title, 
-  & .explorer,
-  & .graph h3,
-  & footer,
-  & .popover-hint,
-  & .breadcrumb-container a,
-  & .page-title a,
-  & h1, & h2, & h3, & h4, & h5, & h6,
-  & p, & li, & span, & td, & th, 
-  & .table,
-  & div:not([class*="graph"]):not([class*="background"]) {
-    color: #000000 !important;
-    text-shadow: none !important;
-    font-weight: 600 !important;
-  }
-
-  /* Graph container */
-  & .graph-outer,
-  & .graph-container {
-    background: #ffffff !important;
-    border-radius: 10px !important;
-    padding: 1.5rem !important;
+  
+  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer { 
+    color: #000000 !important; /* Pure black for better contrast */
   }
 }
 
-html body [data-theme="dark"],
-html body [data-theme="dark"] * {
-  /* Main content areas */
-  & .sidebar, 
-  & .page > .content, 
-  & .page-header, 
-  & .graph,
-  & .popover,
-  & .search-result,
-  & .suggestion-item {
-    background: #111111 !important;
-    border: 3px solid #333333 !important;
-    border-radius: 15px !important;
-    margin: 2rem !important;
-    padding: 2rem !important;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6) !important;
+[data-theme="dark"] {
+  .sidebar, .page > .content, .page-header, .graph {
+    background: #1a1a1a !important; /* SOLID dark instead of transparent */
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border: 2px solid #333333 !important; /* Add border */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important; /* Add shadow */
   }
-
-  /* Content area emphasis */
-  & .page > .content {
-    background: #1a1a1a !important;
-    padding: 3rem !important;
-    border: 4px solid #444444 !important;
+  
+  .page > .content { 
+    padding: 2rem; 
   }
-
-  /* FORCE TEXT VISIBILITY */
-  & .article-title,
-  & .breadcrumb-container,
-  & .content-meta,
-  & article,
-  & .page-title, 
-  & .explorer,
-  & .graph h3,
-  & footer,
-  & .popover-hint,
-  & .breadcrumb-container a,
-  & .page-title a,
-  & h1, & h2, & h3, & h4, & h5, & h6,
-  & p, & li, & span, & td, & th, 
-  & .table,
-  & div:not([class*="graph"]):not([class*="background"]) {
-    color: #ffffff !important;
-    text-shadow: none !important;
-    font-weight: 600 !important;
+  
+  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer, .popover-hint, .breadcrumb-container a, .page-title a { 
+    color: #ffffff !important; /* Pure white for better contrast */
   }
-
-  /* Links */
-  & a {
-    color: #4fa8ff !important;
-  }
-
-  & a:hover {
-    color: #80c1ff !important;
-    text-decoration: underline !important;
-  }
-
-  /* Graph container */
-  & .graph-outer,
-  & .graph-container {
-    background: #111111 !important;
-    border-radius: 10px !important;
-    padding: 1.5rem !important;
-  }
+  
+  a { color: #7b97aa !important; }
+  a:hover { color: #84a59d !important; }
 }
 
-/* EXTREME MEASURES - Target common Quartz classes */
-html body .popover-hint,
-html body .search-result,
-html body .suggestion-item,
-html body .page-header,
-html body .sidebar,
-html body .page > .content,
-html body .graph {
-  /* These will inherit from above, but this reinforces */
-  background: inherit !important;
+/* Keep graph working */
+.graph-outer {
+  background: rgba(255, 255, 255, 0.95) !important;
 }
 
-/* Nuclear option for graph */
-html body .graph-outer * {
-  background: inherit !important;
+[data-theme="dark"] .graph-outer {
+  background: rgba(0, 0, 0, 0.95) !important;
 }
