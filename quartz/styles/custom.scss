@@ -18,7 +18,7 @@ body {
   27%, 35% { background-image: url('https://i.pinimg.com/564x/ea/c4/3c/eac43c75d18cf745bd58c0e64db6d98a.jpg'); }
   36%, 44% { background-image: url('https://live.staticflickr.com/4188/34306721822/3752b8b999_c.jpg'); }
   45%, 53% { background-image: url('https://i.postimg.cc/6qZQRgz1/Lich.jpg'); }
-  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1eGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcrZ2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
+  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1eGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
   63%, 71% { background-image: url('https://2warpstoneptune.com/wp-content/uploads/2015/05/art-of-dd078.jpg'); }
   72%, 80% { background-image: url('https://media.craiyon.com/2025-08-14/OmA8MpvQTLmEi_RVULzvsw.webp'); }
   81%, 89% { background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/5cae1a10028511.560de4ade4737.jpg'); }
@@ -26,50 +26,43 @@ body {
   99%, 100% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg'); }
 }
 
-/* Safer Step 2: Keep original structure but remove complex nested selectors */
+/* Light Mode - Minimal Safe Changes */
 [data-theme="light"] {
   .sidebar, .page > .content, .page-header, .graph {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98); /* More opaque */
     backdrop-filter: blur(12px);
     border-radius: 8px;
     margin: 1rem;
     padding: 1rem;
   }
   .page > .content { padding: 2rem; }
+  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer { 
+    color: #000000 !important; /* Pure black for maximum contrast */
+  }
 }
 
+/* Dark Mode - Minimal Safe Changes */
 [data-theme="dark"] {
   .sidebar, .page > .content, .page-header, .graph {
-    background: rgba(0, 0, 0, 0.92);
+    background: rgba(0, 0, 0, 0.95); /* More opaque */
     backdrop-filter: blur(12px);
     border-radius: 8px;
     margin: 1rem;
     padding: 1rem;
   }
   .page > .content { padding: 2rem; }
+  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer, .popover-hint, .breadcrumb-container a, .page-title a { 
+    color: #ffffff !important; /* Pure white for maximum contrast */
+  }
+  a { color: #a8d1ff !important; }
+  a:hover { color: #ffffff !important; }
 }
 
-/* Text colors moved outside but kept simple */
-[data-theme="light"] .article-title { color: #2b2b2b !important; }
-[data-theme="light"] .breadcrumb-container { color: #2b2b2b !important; }
-[data-theme="light"] .content-meta { color: #2b2b2b !important; }
-[data-theme="light"] article { color: #2b2b2b !important; }
-[data-theme="light"] .page-title { color: #2b2b2b !important; }
-[data-theme="light"] .explorer { color: #2b2b2b !important; }
-[data-theme="light"] .graph h3 { color: #2b2b2b !important; }
-[data-theme="light"] footer { color: #2b2b2b !important; }
+/* Graph Visibility - Safe Target */
+.graph-outer {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
 
-[data-theme="dark"] .article-title { color: #ffffff !important; }
-[data-theme="dark"] .breadcrumb-container { color: #ffffff !important; }
-[data-theme="dark"] .content-meta { color: #ffffff !important; }
-[data-theme="dark"] article { color: #ffffff !important; }
-[data-theme="dark"] .page-title { color: #ffffff !important; }
-[data-theme="dark"] .explorer { color: #ffffff !important; }
-[data-theme="dark"] .graph h3 { color: #ffffff !important; }
-[data-theme="dark"] footer { color: #ffffff !important; }
-[data-theme="dark"] .popover-hint { color: #ffffff !important; }
-[data-theme="dark"] .breadcrumb-container a { color: #ffffff !important; }
-[data-theme="dark"] .page-title a { color: #ffffff !important; }
-
-[data-theme="dark"] a { color: #7b97aa !important; }
-[data-theme="dark"] a:hover { color: #84a59d !important; }
+[data-theme="dark"] .graph-outer {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
