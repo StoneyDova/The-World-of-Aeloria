@@ -2,6 +2,9 @@ The largest continent on Aeloria with 100s of [[Skylands]] dotting its the skies
 
 No one knows the sources of the Skylands or how they are able to float in the sky as no wizard was ever able to detect even trace amounts of magic on its soil or the surrounding air.  No one even knows how many there are, as the further you climb the more appear. Many have attempted to find the last and final island but none have returned after passing a certain island but none were sure how far was too far. These Skylands contain a variety of eco systems and weather, each acting as its independent climate zone. 
 
+test
+
+
 
 
 
