@@ -6,4 +6,3 @@ To the east lies the shining city of [[Elarian Spire]], formerly the only farm l
 
 The south was a wild and still mostly unexplored vast wildland , the region just as diverse in biome as the entire land mass. This area covers over half the continent and not alot is known about its inhabitants  
 
-test
