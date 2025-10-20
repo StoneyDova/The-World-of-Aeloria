@@ -10,9 +10,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-}
-
-/* Readability containers - KEEPING THESE SINCE THEY'RE ESSENTIAL FOR SITE FUNCTIONALITY */
+}/* Readability containers - KEEPING THESE SINCE THEY'RE ESSENTIAL FOR SITE FUNCTIONALITY */
 [data-theme="light"] {
   .sidebar, .page > .content, .page-header {
     background: rgba(255, 255, 255, 0.98);
