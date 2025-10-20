@@ -18,7 +18,7 @@ body {
   27%, 35% { background-image: url('https://i.pinimg.com/564x/ea/c4/3c/eac43c75d18cf745bd58c0e64db6d98a.jpg'); }
   36%, 44% { background-image: url('https://live.staticflickr.com/4188/34306721822/3752b8b999_c.jpg'); }
   45%, 53% { background-image: url('https://i.postimg.cc/6qZQRgz1/Lich.jpg'); }
-  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1eGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk5LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
+  54%, 62% { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07320000-f46b-4276-ad18-9b03a4367b89/dguxdv9-d60206b7-bca5-48c1-bf70-331408cad1a1.png/v1/fill/w_1920,h_2560,q_80,strp/the_1970s_spirit_of_dungeons_and_dragons_by_oldskvll_dguxdv9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzMyMDAwMC1mNDZiLTQyNzYtYWQxOC05YjAzYTQzNjdiODkvZGd1uGR2OS1kNjAyMDZiNy1iY2E1LTQ4YzEtYmY3MC0zMzE0MDhjYWQxYTEucG5nIiwiaGVpZ2h0IjoiPD0yNTYwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiL3dtLzA3MzIwMDAwLWY0NmItNDI3Ni1hZDE4LTliMDNhNDM2N2I4OS9vbGRza3ZsbC00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC45NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.j2V-qRfPh_OVYMYmD1ZCNUZsRb314AYjYxkIDZs85yU'); }
   63%, 71% { background-image: url('https://2warpstoneptune.com/wp-content/uploads/2015/05/art-of-dd078.jpg'); }
   72%, 80% { background-image: url('https://media.craiyon.com/2025-08-14/OmA8MpvQTLmEi_RVULzvsw.webp'); }
   81%, 89% { background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/5cae1a10028511.560de4ade4737.jpg'); }
@@ -27,7 +27,7 @@ body {
 }
 
 [data-theme="light"] {
-  .sidebar, .page > .content, .page-header, .graph {
+  .sidebar, .page > .content, .page-header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     border-radius: 8px;
@@ -38,7 +38,7 @@ body {
 }
 
 [data-theme="dark"] {
-  .sidebar, .page > .content, .page-header, .graph {
+  .sidebar, .page > .content, .page-header {
     background: rgba(0, 0, 0, 0.92);
     backdrop-filter: blur(12px);
     border-radius: 8px;
@@ -79,3 +79,14 @@ body {
 
 [data-theme="dark"] a { color: #a8d1ff !important; }
 [data-theme="dark"] a:hover { color: #ffffff !important; }
+
+/* Fix 4: Targeted graph fix */
+.graph-outer {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+[data-theme="dark"] .graph-outer {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
