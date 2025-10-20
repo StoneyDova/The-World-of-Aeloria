@@ -35,6 +35,9 @@ body {
     padding: 1rem;
   }
   .page > .content { padding: 2rem; }
+  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer { 
+    color: #2b2b2b !important; 
+  }
 }
 
 [data-theme="dark"] {
@@ -46,33 +49,9 @@ body {
     padding: 1rem;
   }
   .page > .content { padding: 2rem; }
+  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer, .popover-hint, .breadcrumb-container a, .page-title a { 
+    color: #ffffff !important; 
+  }
+  a { color: #7b97aa !important; }
+  a:hover { color: #84a59d !important; }
 }
-
-/* Fix 1: Remove complex selectors - Simple text color fix */
-[data-theme="light"] .article-title,
-[data-theme="light"] .breadcrumb-container,
-[data-theme="light"] .content-meta,
-[data-theme="light"] article,
-[data-theme="light"] .page-title,
-[data-theme="light"] .explorer,
-[data-theme="light"] .graph h3,
-[data-theme="light"] footer {
-  color: #2b2b2b !important;
-}
-
-[data-theme="dark"] .article-title,
-[data-theme="dark"] .breadcrumb-container,
-[data-theme="dark"] .content-meta,
-[data-theme="dark"] article,
-[data-theme="dark"] .page-title,
-[data-theme="dark"] .explorer,
-[data-theme="dark"] .graph h3,
-[data-theme="dark"] footer,
-[data-theme="dark"] .popover-hint,
-[data-theme="dark"] .breadcrumb-container a,
-[data-theme="dark"] .page-title a {
-  color: #ffffff !important;
-}
-
-[data-theme="dark"] a { color: #7b97aa !important; }
-[data-theme="dark"] a:hover { color: #84a59d !important; }
