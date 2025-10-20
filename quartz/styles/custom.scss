@@ -1,6 +1,6 @@
 @use "./base.scss";
 
-/* RESTORE WORKING BACKGROUND SYSTEM */
+/* MINIMAL VERSION - ONLY BACKGROUNDS AND OVERLAY */
 body {
   animation: backgroundRotate 120s infinite;
   background-size: cover;
@@ -9,6 +9,20 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+/* Dark overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes backgroundRotate {
@@ -24,43 +38,4 @@ body {
   81%, 89% { background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/5cae1a10028511.560de4ade4737.jpg'); }
   90%, 98% { background-image: url('https://i.redd.it/b0566dl3sw121.jpg'); }
   99%, 100% { background-image: url('https://shaneplays.com/wp-content/uploads/2015/04/dungeons_and_dragons_dd_basic_set_1stedition_original_box_holmes_edition.jpg'); }
-}
-
-/* RESTORE WORKING READABILITY */
-[data-theme="light"] {
-  .sidebar, .page > .content, .page-header, .graph {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    border-radius: 8px;
-    margin: 1rem;
-    padding: 1rem;
-  }
-  .page > .content { padding: 2rem; }
-  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer { 
-    color: #2b2b2b !important; 
-  }
-}
-
-[data-theme="dark"] {
-  .sidebar, .page > .content, .page-header, .graph {
-    background: rgba(0, 0, 0, 0.92);
-    backdrop-filter: blur(12px);
-    border-radius: 8px;
-    margin: 1rem;
-    padding: 1rem;
-  }
-  .page > .content { padding: 2rem; }
-  .article-title, .breadcrumb-container, .content-meta, article, .page-title, .explorer, .graph h3, footer, .popover-hint, .breadcrumb-container a, .page-title a { 
-    color: #ffffff !important; 
-  }
-  a { color: #7b97aa !important; }
-  a:hover { color: #84a59d !important; }
-}
-
-.graph-outer {
-  background: rgba(255, 255, 255, 0.95) !important;
-}
-
-[data-theme="dark"] .graph-outer {
-  background: rgba(0, 0, 0, 0.95) !important;
 }
