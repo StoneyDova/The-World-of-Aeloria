@@ -1,1 +1,4 @@
+WIP
 The Grung wizard who persisted in his research of Ulcromite long after many deemed them to have no inherant magical value. He soon discovered and developed a method to imbue the quartz like crystal with magic in a variety of ways thats later in cinjunction with machines lead to the rise of [[Elarian Spire]] 
+
+his ward his [[Myra Hugo]] 
