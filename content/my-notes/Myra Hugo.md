@@ -5,3 +5,5 @@ Myra grew up in the upper levels of The Spire, so high up when she looked down r
 As she grew older and more valuable to Rohb, she would soon take on the role of field research after expressing her desire to see outside of the spire. In the early days she would study just the caverns below the city, but soon she was sent all over the world on various missions or assignments. From Aureon and their magical Skylands to the barren and hostile Great ego where she was one of the only outsiders to ever gain the trust of the local tribe of agorians that called the sand their land, showing her their intricate tunnel system under the sands.
 
 She is just returning from a trip to this desert land with research notes and a report ready to deliver to Rohb and head out on her next grand adventure. As she enters the city through the massive front gates, a large commotion rolls through the city.
+
+test tes
