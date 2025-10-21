@@ -52,21 +52,18 @@ body {
   article, .page-title, .explorer, .graph h3, footer {
     color: #ffffff !important;
   }
-}
+} /* ← THIS CLOSING BRACE WAS MISSING! */
 
 /* Graph visibility - KEEPING THIS SINCE IT'S ESSENTIAL */
 .graph-outer {
   background: rgba(255, 255, 255, 0.95) !important;
   border-radius: 8px;
   padding: 1rem;
-
-  /* NEW styles for the space background - add these lines */
   background-image: url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-}
 }
 
 [data-theme="dark"] .graph-outer {
