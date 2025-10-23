@@ -2,7 +2,7 @@
 
 /* STATIC BACKGROUND VERSION - SINGLE IMAGE */
 body {
-  background-image: url('https://www.dndbeyond.com/attachments/6/896/rot-cover-4k.jpg');
+  background-image: url('https://wallpapers.com/images/hd/dnd-dragon-in-the-mountain-p3cxbaskwh0xpawq.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -94,7 +94,7 @@ body {
   color: #ffffff !important;
 }
 
-/* D&D STYLE RED FOR ALL HEADERS AND LINKS */
+/* SOFTER D&D STYLE RED FOR ALL HEADERS AND LINKS */
 .article-title,
 .page-title,
 .sidebar a, /* All links in sidebar/explorer */
@@ -103,7 +103,7 @@ body {
 .sidebar h1,
 .sidebar h2,
 .sidebar h3 {
-  color: #8B0000 !important; /* Classic dark blood red */
+  color: #A52A2A !important; /* Softer brown-red instead of #8B0000 */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -125,7 +125,7 @@ body {
   color: #000000 !important;
 }
 
-/* Light theme D&D red override */
+/* Light theme softer D&D red override */
 [data-theme="light"] .article-title,
 [data-theme="light"] .page-title,
 [data-theme="light"] .sidebar a,
@@ -134,7 +134,7 @@ body {
 [data-theme="light"] .sidebar h1,
 [data-theme="light"] .sidebar h2,
 [data-theme="light"] .sidebar h3 {
-  color: #8B0000 !important; /* Keep D&D red in light theme too */
+  color: #A52A2A !important; /* Softer brown-red in light theme too */
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
