@@ -52,7 +52,7 @@ body {
   article, .page-title, .explorer, .graph h3, footer {
     color: #ffffff !important;
   }
-}
+}  // ← ADDED THE MISSING CLOSING BRACE
 
 /* Graph visibility - KEEPING THIS SINCE IT'S ESSENTIAL */
 .graph-outer {
