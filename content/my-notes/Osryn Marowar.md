@@ -1,1 +1,13 @@
-test
+A Dragonborn Druid from the forest of [[Giant Vords]] in northern Elaria, its orignal name lost as the cultist and nature god, [[Vorda]] fanatics that moved in after the elven ruling class fell. Living on the outer edges of the forsest with his wife and child, Osryn lived a peaceful life. While he did live in the forstest, surrounded by cultist and monsters, none dared challenge him after witnessing his first day in the forest when a pack of wild goblins attemped to attack the convoy he and hisfamily rode through the forst in. The fight was savage and fast, Osryn revealing his combat prowess as he took the form of many beast to tear the lowly goblins to shreds in so complete a manner even much more powerful foe who witnessed or heard of the events knew they would be no match.
+
+After his victory over the pack he declared the immediate area to be his domain and all wildlife in was considered under his protection. Some monsters tested these boundarys in the early days but none lived long after the offence. Soon the area became known as the druids grove, a safe zone for all who could maintain the peace. AFter 5 years this grove had spread and grown into a large sector of the forest and many druids came to call it home. As his influence grew, cultist began to take notice of the grove and believed death to be part of nature and viewed the grove as a an afront to Vorda and the forest.
+
+It was deep into the night in the middle of the fall harvest of a fruit that allowed druids to shapeshift, even when all their magic has been drained, the [[Bujo Berry]], when suddenly the peace and quite was cut through with a shreik of pure agony rang out, quickly followed by the sounds of weapons clashing mixed with the grunts and screams from men and beast alike. 
+
+Osryn shot awake and rushed out of his hut at the center of the grove, greeted with fire and death all around him. An army of the undead and cultist had marched into the grove, putting all in their path to the sword. Osryn rushed to the front lines, mowing dozens down in a matter of minures as he cycled through half a dozen forms to dispatch his foes.
+
+He fought on in a blind rage until only he remained, surrounded by the undead and cultist. Slowly the undead halted their advance and formed a circle around the druid who was swinging wildly with his quarterstaff, at this point having depleted all his transformations. As he looked around with wide and shocked eyes, the circle begins to part as a regal looking dark elf fills the gap.
+
+She continued her march towards the man who swung at the empty air between them to ward her off. The dark elf lazily knocked the staff aside as it entered her range and knocked Osryn to the group, planting her own staff on his chest. The man stared blankly at her with pure hate as she revealed her purpose in the grove. 
+
+Calling herself [[Vordaiya]] 
