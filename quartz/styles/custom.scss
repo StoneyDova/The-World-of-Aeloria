@@ -96,6 +96,19 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* BLACK BOXES FOR EXPLORER TAB LINKS */
+.sidebar a,
+.sidebar li,
+.sidebar .tree-item,
+.sidebar .tree-item-link {
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #8B0000 !important; /* Keep the D&D red */
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin: 0.125rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 /* Light theme adjustment for new black boxes */
 [data-theme="light"] .page-header,
 [data-theme="light"] .sidebar > :first-child,
@@ -116,6 +129,16 @@ body {
 [data-theme="light"] .sidebar h2,
 [data-theme="light"] .sidebar h3 {
   color: #8B0000 !important; /* Keep D&D red in light theme too */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Light theme black boxes for explorer links */
+[data-theme="light"] .sidebar a,
+[data-theme="light"] .sidebar li,
+[data-theme="light"] .sidebar .tree-item,
+[data-theme="light"] .sidebar .tree-item-link {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #8B0000 !important;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
