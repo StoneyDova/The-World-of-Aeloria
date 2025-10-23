@@ -70,25 +70,12 @@ body {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-/* NEW: Black boxes for title, search bar, explorer, and article lists */
+/* NEW: Black boxes for title, search bar, and explorer CONTAINER ONLY */
 .page-header,
-.sidebar > :first-child, /* Targets search bar area */
-.sidebar > :nth-child(2), /* Targets explorer/toc area */
+.sidebar > :first-child, /* Search bar container */
+.sidebar > :nth-child(2), /* Explorer container */
 .article-title,
-.page-title,
-/* Target article lists in sidebar and main content */
-.sidebar ul,
-.sidebar ol,
-.sidebar li,
-.sidebar a,
-.sidebar .tree,
-.sidebar .explorer,
-.sidebar .toc,
-.sidebar .section-ul,
-.page > .content ul,
-.page > .content ol,
-.page > .content li,
-.page > .content a {
+.page-title {
   background: rgba(0, 0, 0, 0.7) !important;
   color: #ffffff !important;
   padding: 0.5rem;
@@ -101,19 +88,7 @@ body {
 [data-theme="light"] .sidebar > :first-child,
 [data-theme="light"] .sidebar > :nth-child(2),
 [data-theme="light"] .article-title,
-[data-theme="light"] .page-title,
-[data-theme="light"] .sidebar ul,
-[data-theme="light"] .sidebar ol,
-[data-theme="light"] .sidebar li,
-[data-theme="light"] .sidebar a,
-[data-theme="light"] .sidebar .tree,
-[data-theme="light"] .sidebar .explorer,
-[data-theme="light"] .sidebar .toc,
-[data-theme="light"] .sidebar .section-ul,
-[data-theme="light"] .page > .content ul,
-[data-theme="light"] .page > .content ol,
-[data-theme="light"] .page > .content li,
-[data-theme="light"] .page > .content a {
+[data-theme="light"] .page-title {
   background: rgba(255, 255, 255, 0.9) !important;
   color: #000000 !important;
 }
