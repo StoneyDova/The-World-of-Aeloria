@@ -5,6 +5,10 @@ on:
     branches: [v4]
   workflow_dispatch:
 
+concurrency: 
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,14 +16,11 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    concurrency:
-      group: "pages"
-      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for proper git info
+          fetch-depth: 0
           
       - name: Setup Node
         uses: actions/setup-node@v4
