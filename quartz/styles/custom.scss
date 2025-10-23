@@ -83,11 +83,17 @@ body {
   margin: 0.5rem 0;
 }
 
-/* D&D STYLE RED FOR TITLES - PLACED AFTER BLACK BOXES FOR SPECIFICITY */
+/* D&D STYLE RED FOR ALL HEADERS AND LINKS */
 .article-title,
-.page-title {
-  color: #8B0000 !important; /* Classic dark blood red - very D&D */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds depth */
+.page-title,
+.sidebar a, /* All links in sidebar/explorer */
+.breadcrumb-container a, /* Home❯my notes❯Aureon path links */
+.site-title, /* "Paragons of Aeloria" */
+.sidebar h1,
+.sidebar h2,
+.sidebar h3 {
+  color: #8B0000 !important; /* Classic dark blood red */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Light theme adjustment for new black boxes */
@@ -102,7 +108,13 @@ body {
 
 /* Light theme D&D red override */
 [data-theme="light"] .article-title,
-[data-theme="light"] .page-title {
+[data-theme="light"] .page-title,
+[data-theme="light"] .sidebar a,
+[data-theme="light"] .breadcrumb-container a,
+[data-theme="light"] .site-title,
+[data-theme="light"] .sidebar h1,
+[data-theme="light"] .sidebar h2,
+[data-theme="light"] .sidebar h3 {
   color: #8B0000 !important; /* Keep D&D red in light theme too */
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
