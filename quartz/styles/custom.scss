@@ -70,6 +70,29 @@ body {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+/* NEW: Black boxes for title, search bar, and explorer */
+.page-header,
+.sidebar > :first-child, /* Targets search bar area */
+.sidebar > :nth-child(2), /* Targets explorer/toc area */
+.article-title,
+.page-title {
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #ffffff !important;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+/* Light theme adjustment for new black boxes */
+[data-theme="light"] .page-header,
+[data-theme="light"] .sidebar > :first-child,
+[data-theme="light"] .sidebar > :nth-child(2),
+[data-theme="light"] .article-title,
+[data-theme="light"] .page-title {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #000000 !important;
+}
+
 /* ULTRA-MINIMAL VERSION - ADD TO BOTTOM OF EXISTING FILE */
 
 /* Semi-transparent text backgrounds - non-breaking */
