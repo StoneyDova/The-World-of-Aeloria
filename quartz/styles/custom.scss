@@ -78,6 +78,31 @@ body {
   background-blend-mode: overlay !important;
 }
 
+/* Full-screen graph mode background */
+.graph.fullscreen {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Ensure graph canvas itself doesn't override our background */
+.graph.fullscreen canvas {
+  background: transparent !important;
+}
+
+/* Light theme full-screen graph */
+[data-theme="light"] .graph.fullscreen {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
 /* LARGE CONTAINER BLACK BOXES */
 .page-header,
 .article-title,
