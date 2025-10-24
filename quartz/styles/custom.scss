@@ -78,23 +78,41 @@ body {
   background-blend-mode: overlay !important;
 }
 
-/* Full-screen graph mode background */
-.graph.fullscreen {
+/* FIXED: Full-screen graph targets the SAME .graph-outer container */
+.graph-outer.fullscreen,
+body.fullscreen-graph .graph-outer,
+.graph-outer[style*="fullscreen"],
+.graph-outer[style*="fixed"] {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  border-radius: 0 !important; /* Remove border radius in fullscreen */
+  margin: 0 !important; /* Remove margins in fullscreen */
+  padding: 0 !important; /* Remove padding in fullscreen */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
 }
 
-/* Ensure graph canvas itself doesn't override our background */
-.graph.fullscreen canvas {
+/* Ensure canvas is transparent in fullscreen */
+.graph-outer.fullscreen canvas,
+body.fullscreen-graph .graph-outer canvas,
+.graph-outer[style*="fullscreen"] canvas {
   background: transparent !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Light theme full-screen graph */
-[data-theme="light"] .graph.fullscreen {
+[data-theme="light"] .graph-outer.fullscreen,
+[data-theme="light"] body.fullscreen-graph .graph-outer,
+[data-theme="light"] .graph-outer[style*="fullscreen"] {
   background: 
     linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
     url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg') !important;
