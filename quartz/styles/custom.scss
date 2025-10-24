@@ -222,3 +222,37 @@ article h6 {
 [data-theme="dark"] .page-header {
   background: rgba(0, 0, 0, 0.8) !important;
 }
+
+/* ==================== */
+/* MOBILE OPTIMIZATIONS */
+/* ==================== */
+
+@media only screen and (max-width: 768px) {
+  
+  /* Simplify main content areas */
+  .page > .content,
+  .sidebar,
+  .page-header {
+    margin: 0.5rem !important; /* Reduce margins on mobile */
+    padding: 0.75rem !important; /* Reduce padding on mobile */
+  }
+
+  /* Ensure text blocks don't have excessive padding */
+  .page > .content p,
+  .page > .content li,
+  article p,
+  article li {
+    padding: 0.25rem !important;
+  }
+
+  /* Make sure the graph is viewable */
+  .graph-outer {
+    padding: 0.5rem !important;
+    margin: 0.5rem !important;
+  }
+
+  /* Optional: Adjust font size for mobile if needed */
+  body {
+    font-size: 14px;
+  }
+}
