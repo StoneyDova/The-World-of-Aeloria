@@ -158,11 +158,17 @@ body.fullscreen-graph .graph-outer canvas,
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* CHANGE: Green druidic background for "Paragons of Aeloria" page title container */
+/* CHANGE: Black transparent box background for "Paragons of Aeloria" page title container */
 .page-title {
-  background: linear-gradient(135deg, #0A3D0A, #1B4D1B, #2E8B57) !important;
+  background: 
+    linear-gradient(135deg, 
+      rgba(10, 61, 10, 0.8), 
+      rgba(27, 77, 27, 0.8), 
+      rgba(46, 139, 87, 0.8)
+    ) !important;
   color: #F5F5DC !important; /* Beige text */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
 }
 /* Light theme adjustment for large container black boxes */
 [data-theme="light"] .page-header,
