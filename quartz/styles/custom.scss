@@ -2,7 +2,7 @@
 
 /* STATIC BACKGROUND VERSION - SINGLE IMAGE */
 body {
-  background-image: url('https://www.dndbeyond.com/attachments/6/896/rot-cover-4k.jpg');
+  background-image: url('https://wallpapers.com/images/hd/dnd-dragon-in-the-mountain-p3cxbaskwh0xpawq.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -54,20 +54,28 @@ body {
   }
 }
 
-/* Graph visibility - KEEPING THIS SINCE IT'S ESSENTIAL */
+/* Graph visibility - FIXED BACKGROUND IMPLEMENTATION */
 .graph-outer {
-  background: rgba(255, 255, 255, 0.95) !important;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-blend-mode: overlay !important;
   border-radius: 8px;
   padding: 1rem;
-  background-image: url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
+  position: relative;
 }
 
 [data-theme="dark"] .graph-outer {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url('https://getwallpapers.com/wallpaper/full/a/d/c/555865.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-blend-mode: overlay !important;
 }
 
 /* LARGE CONTAINER BLACK BOXES */
