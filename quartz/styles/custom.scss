@@ -341,23 +341,23 @@ table tr:nth-child(even) td,
 }
 
 /* ================================== */
-/* ARTICLE MASCOT ICON - MULTIPLE PATH ATTEMPTS */
+/* ARTICLE MASCOT ICON - CORRECT PATH FOR static/images/ */
 /* ================================== */
 
-/* Solution 1: Try multiple possible paths */
+/* Remove any debug messages */
+.page > .content:before,
+article:before {
+  display: none !important;
+}
+
+/* CORRECT PATH FOR IMAGES IN static/images/ FOLDER */
 .page > .content:after,
 article:after {
   content: "";
   display: block;
   width: 200px;
   height: 200px;
-  background-image: 
-    /* Try multiple paths in order */
-    url('/The-World-of-Aeloria/images/mascot.png'),
-    url('/images/mascot.png'),
-    url('./images/mascot.png'),
-    url('images/mascot.png'),
-    url('mascot.png');
+  background-image: url('/The-World-of-Aeloria/images/mascot.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -368,27 +368,6 @@ article:after {
   background-color: rgba(0, 0, 0, 0.8) !important;
   padding: 10px;
   background-origin: content-box;
-}
-
-/* Solution 2: Debug version - shows which path works */
-.page > .content:before,
-article:before {
-  content: "🔄 Testing mascot paths... (If you see this, CSS is working but image path is wrong)";
-  display: block;
-  text-align: center;
-  color: #ff6b6b;
-  font-size: 0.8em;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  background: rgba(255, 0, 0, 0.1);
-  border: 1px dashed #ff6b6b;
-}
-
-/* Solution 3: Fallback to background color if image fails */
-.page > .content:after,
-article:after {
-  /* This will create a colored box if image doesn't load */
-  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 /* Mobile responsive */
