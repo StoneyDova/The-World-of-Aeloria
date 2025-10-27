@@ -230,59 +230,114 @@ article h6 {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
-/* TABLE BLACK BOX STYLING - ENHANCED VERSION */
-.page > .content table {
+/* ================================== */
+/* COMPREHENSIVE TABLE STYLING FIX */
+/* ================================== */
+
+/* Nuclear option for tables - multiple selector approaches */
+table,
+.page table,
+.page > .content table,
+.page .content table,
+article table,
+.content table,
+.page > div table,
+.page > .content > div table,
+.page > .content > article table,
+[data-theme] table,
+[data-theme] .page table,
+[data-theme] .page > .content table {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  margin: 1rem 0 !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Table headers - multiple approaches */
+table th,
+.page table th,
+.page > .content table th,
+.page .content table th,
+article table th,
+.content table th,
+[data-theme] table th,
+[data-theme] .page table th,
+[data-theme] .page > .content table th {
+  background: rgba(0, 0, 0, 0.95) !important;
+  color: #ffffff !important;
+  padding: 0.75rem !important;
+  text-align: left !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Table cells - multiple approaches */
+table td,
+.page table td,
+.page > .content table td,
+.page .content table td,
+article table td,
+.content table td,
+[data-theme] table td,
+[data-theme] .page table td,
+[data-theme] .page > .content table td {
   background: rgba(0, 0, 0, 0.8) !important;
   color: #ffffff !important;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-collapse: collapse;
-  width: 100%;
-  overflow: hidden;
+  padding: 0.75rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-.page > .content table th {
-  background: rgba(0, 0, 0, 0.9) !important;
-  color: #ffffff !important;
-  padding: 0.75rem;
-  text-align: left;
-  font-weight: bold;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.page > .content table td {
-  background: rgba(0, 0, 0, 0.7) !important;
-  color: #ffffff !important;
-  padding: 0.75rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+/* Remove right border from last cell */
+table td:last-child,
+.page table td:last-child,
+.page > .content table td:last-child {
+  border-right: none !important;
 }
 
 /* Table row hover effects */
+table tr:hover td,
+.page table tr:hover td,
 .page > .content table tr:hover td {
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(30, 30, 60, 0.9) !important;
 }
 
 /* Zebra striping for better readability */
+table tr:nth-child(even) td,
+.page table tr:nth-child(even) td,
 .page > .content table tr:nth-child(even) td {
-  background: rgba(0, 0, 0, 0.75) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
 }
 
-/* Ensure table text is properly styled */
-.page > .content table th,
-.page > .content table td {
-  background: rgba(0, 0, 0, 0.8) !important;
-  color: #ffffff !important;
-  padding: 0.5rem;
-  border-radius: 4px;
-}
-
-/* Light theme table adjustments */
+/* Light theme table overrides - force dark tables */
+[data-theme="light"] table,
+[data-theme="light"] .page table,
 [data-theme="light"] .page > .content table,
-[data-theme="light"] .page > .content table th,
+[data-theme="light"] article table,
+[data-theme="light"] .content table {
+  background: rgba(0, 0, 0, 0.85) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="light"] table th,
+[data-theme="light"] .page table th,
+[data-theme="light"] .page > .content table th {
+  background: rgba(0, 0, 0, 0.95) !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+[data-theme="light"] table td,
+[data-theme="light"] .page table td,
 [data-theme="light"] .page > .content table td {
   background: rgba(0, 0, 0, 0.8) !important;
   color: #ffffff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 /* ==================== */
@@ -314,14 +369,20 @@ article h6 {
   }
 
   /* Table mobile optimizations */
+  table,
+  .page table,
   .page > .content table {
-    font-size: 0.9em;
-    padding: 0.5rem;
+    font-size: 0.8em !important;
+    padding: 0.5rem !important;
   }
   
+  table th,
+  table td,
+  .page table th,
+  .page table td,
   .page > .content table th,
   .page > .content table td {
-    padding: 0.5rem;
+    padding: 0.4rem !important;
   }
 
   /* Optional: Adjust font size for mobile if needed */
