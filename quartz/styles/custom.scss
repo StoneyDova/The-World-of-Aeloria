@@ -230,24 +230,59 @@ article h6 {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
-/* Minimal table black boxes */
-.page > .content table,
+/* TABLE BLACK BOX STYLING - ENHANCED VERSION */
+.page > .content table {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page > .content table th {
+  background: rgba(0, 0, 0, 0.9) !important;
+  color: #ffffff !important;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.page > .content table td {
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #ffffff !important;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Table row hover effects */
+.page > .content table tr:hover td {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Zebra striping for better readability */
+.page > .content table tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Ensure table text is properly styled */
 .page > .content table th,
 .page > .content table td {
   background: rgba(0, 0, 0, 0.8) !important;
   color: #ffffff !important;
-}
-
-.page > .content table {
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-.page > .content table th,
-.page > .content table td {
   padding: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Light theme table adjustments */
+[data-theme="light"] .page > .content table,
+[data-theme="light"] .page > .content table th,
+[data-theme="light"] .page > .content table td {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
 }
 
 /* ==================== */
@@ -276,6 +311,17 @@ article h6 {
   .graph-outer {
     padding: 0.5rem !important;
     margin: 0.5rem !important;
+  }
+
+  /* Table mobile optimizations */
+  .page > .content table {
+    font-size: 0.9em;
+    padding: 0.5rem;
+  }
+  
+  .page > .content table th,
+  .page > .content table td {
+    padding: 0.5rem;
   }
 
   /* Optional: Adjust font size for mobile if needed */
