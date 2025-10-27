@@ -230,6 +230,26 @@ article h6 {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
+/* Minimal table black boxes */
+.page > .content table,
+.page > .content table th,
+.page > .content table td {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+}
+
+.page > .content table {
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.page > .content table th,
+.page > .content table td {
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* ==================== */
 /* MOBILE OPTIMIZATIONS */
 /* ==================== */
