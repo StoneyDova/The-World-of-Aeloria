@@ -341,54 +341,25 @@ table tr:nth-child(even) td,
 }
 
 /* ================================== */
-/* DEBUG MASCOT - FIND THE RIGHT PATH */
+/* CLEAN MASCOT - NO DEBUG TEXT */
 /* ================================== */
 
-/* Debug message to show what path we're trying */
+/* Remove all debug messages */
 .page > .content:before,
 article:before {
-  content: "🔍 DEBUG: Testing image paths... (Check browser console for 404 errors)";
-  display: block;
-  text-align: center;
-  color: #ff6b6b;
-  font-size: 0.8em;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  background: rgba(255, 0, 0, 0.1);
-  border: 1px dashed #ff6b6b;
-  border-radius: 4px;
+  display: none !important;
 }
 
-/* Nuclear option - try EVERY possible path */
+/* Clean mascot - image only */
 .page > .content:after,
 article:after {
-  content: "🖼️ MASCOT SHOULD BE HERE - If you see this text, image failed to load";
+  content: ""; /* EMPTY - no text */
   display: block;
   width: 200px;
   height: 200px;
   
-  /* Try EVERY possible path structure */
-  background-image: 
-    /* GitHub Pages paths */
-    url('https://stoneydova.github.io/The-World-of-Aeloria/images/mascot.png'),
-    url('https://stoneydova.github.io/The-World-of-Aeloria/mascot.png'),
-    
-    /* Absolute paths */
-    url('/The-World-of-Aeloria/images/mascot.png'),
-    url('/The-World-of-Aeloria/mascot.png'),
-    url('/images/mascot.png'),
-    url('/mascot.png'),
-    
-    /* Relative paths */
-    url('./images/mascot.png'),
-    url('./mascot.png'),
-    url('images/mascot.png'),
-    url('mascot.png'),
-    
-    /* Quartz-specific paths */
-    url('/static/images/mascot.png'),
-    url('/static/mascot.png'),
-    url('./static/images/mascot.png');
+  /* Use the working path from the debug version */
+  background-image: url('/The-World-of-Aeloria/images/mascot.png');
   
   background-size: contain;
   background-repeat: no-repeat;
@@ -396,12 +367,10 @@ article:after {
   margin: 3rem auto 1rem auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border: 2px solid red !important; /* Red border to see the area clearly */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Back to subtle border */
   background-color: rgba(0, 0, 0, 0.8) !important;
-  color: white !important;
-  text-align: center;
-  padding-top: 80px; /* Push text down */
-  font-size: 0.7em;
+  padding: 10px;
+  background-origin: content-box;
 }
 
 /* Mobile responsive */
@@ -411,7 +380,6 @@ article:after {
     width: 150px;
     height: 150px;
     margin: 2rem auto 1rem auto;
-    padding-top: 60px;
   }
 }
 
