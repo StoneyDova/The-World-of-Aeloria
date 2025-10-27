@@ -340,6 +340,46 @@ table tr:nth-child(even) td,
   border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
+/* ================================== */
+/* ARTICLE MASCOT ICON - AUTO INSERT */
+/* ================================== */
+
+/* Add mascot to the end of every article */
+.page > .content:after,
+article:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url('/images/mascot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 3rem auto 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* Optional: Add a subtle border */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure mascot has black box background for readability */
+.page > .content:after,
+article:after {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  padding: 10px;
+  background-origin: content-box;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+  .page > .content:after,
+  article:after {
+    width: 150px;
+    height: 150px;
+    margin: 2rem auto 1rem auto;
+  }
+}
+
 /* ==================== */
 /* MOBILE OPTIMIZATIONS */
 /* ==================== */
