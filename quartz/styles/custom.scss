@@ -341,23 +341,21 @@ table tr:nth-child(even) td,
 }
 
 /* ================================== */
-/* ARTICLE MASCOT ICON - CORRECT PATH FOR static/images/ */
+/* MULTIPLE PATH ATTEMPTS */
 /* ================================== */
 
-/* Remove any debug messages */
-.page > .content:before,
-article:before {
-  display: none !important;
-}
-
-/* CORRECT PATH FOR IMAGES IN static/images/ FOLDER */
 .page > .content:after,
 article:after {
   content: "";
   display: block;
   width: 200px;
   height: 200px;
-  background-image: url('/The-World-of-Aeloria/images/mascot.png');
+  /* Try these paths in order - browser will use first one that works */
+  background-image: 
+    url('/The-World-of-Aeloria/images/mascot.png'),    /* GitHub Pages with images folder */
+    url('/images/mascot.png'),                         /* Root images path */
+    url('./images/mascot.png'),                        /* Relative images path */
+    url('https://stoneydova.github.io/The-World-of-Aeloria/images/mascot.png'); /* Full URL */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
