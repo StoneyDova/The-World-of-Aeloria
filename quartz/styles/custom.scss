@@ -341,25 +341,54 @@ table tr:nth-child(even) td,
 }
 
 /* ================================== */
-/* CLEAN MASCOT - NO DEBUG TEXT */
+/* WORKING MASCOT - KEEP DEBUG STYLING BUT REMOVE TEXT */
 /* ================================== */
 
-/* Remove all debug messages */
+/* Keep the debug message at top for now so we know it's working */
 .page > .content:before,
 article:before {
-  display: none !important;
+  content: "✅ MASCOT IS WORKING! (This text will be removed in next deployment)";
+  display: block;
+  text-align: center;
+  color: #00ff00;
+  font-size: 0.8em;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px dashed #00ff00;
+  border-radius: 4px;
 }
 
-/* Clean mascot - image only */
+/* KEEP THE EXACT SAME STYLING THAT WORKED, JUST REMOVE THE TEXT CONTENT */
 .page > .content:after,
 article:after {
-  content: ""; /* EMPTY - no text */
+  content: ""; /* REMOVE TEXT BUT KEEP EVERYTHING ELSE */
   display: block;
   width: 200px;
   height: 200px;
   
-  /* Use the working path from the debug version */
-  background-image: url('/The-World-of-Aeloria/images/mascot.png');
+  /* Keep ALL the same paths that worked */
+  background-image: 
+    /* GitHub Pages paths */
+    url('https://stoneydova.github.io/The-World-of-Aeloria/images/mascot.png'),
+    url('https://stoneydova.github.io/The-World-of-Aeloria/mascot.png'),
+    
+    /* Absolute paths */
+    url('/The-World-of-Aeloria/images/mascot.png'),
+    url('/The-World-of-Aeloria/mascot.png'),
+    url('/images/mascot.png'),
+    url('/mascot.png'),
+    
+    /* Relative paths */
+    url('./images/mascot.png'),
+    url('./mascot.png'),
+    url('images/mascot.png'),
+    url('mascot.png'),
+    
+    /* Quartz-specific paths */
+    url('/static/images/mascot.png'),
+    url('/static/mascot.png'),
+    url('./static/images/mascot.png');
   
   background-size: contain;
   background-repeat: no-repeat;
@@ -367,10 +396,13 @@ article:after {
   margin: 3rem auto 1rem auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.1); /* Back to subtle border */
+  border: 2px solid red !important; /* KEEP RED BORDER FOR NOW */
   background-color: rgba(0, 0, 0, 0.8) !important;
-  padding: 10px;
-  background-origin: content-box;
+  /* REMOVE ALL TEXT-RELATED STYLES: */
+  /* color: white !important; */
+  /* text-align: center; */
+  /* padding-top: 80px; */
+  /* font-size: 0.7em; */
 }
 
 /* Mobile responsive */
@@ -380,6 +412,7 @@ article:after {
     width: 150px;
     height: 150px;
     margin: 2rem auto 1rem auto;
+    /* padding-top: 60px; */ /* Remove text-related padding */
   }
 }
 
