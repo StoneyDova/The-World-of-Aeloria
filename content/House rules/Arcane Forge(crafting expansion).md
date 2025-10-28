@@ -1,6 +1,4 @@
-Of course. Here is the revised article with a comprehensive list of all the materials added by the system, presented in the style of Paragon.
 
-***
 
 ### **The Arcane Forge: A Masterwork Guide to Materials & Enchantments**
 
