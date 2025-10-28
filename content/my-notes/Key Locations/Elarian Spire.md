@@ -126,3 +126,19 @@ Elarian Spire was once nothing more than peaceful and remote farmland. After the
 - **Edrin's Escape:** After three long years of imprisonment and honing his skills, **[[Edrin Cloud]]** executes his escape from **[[The Moss Tower]]**. His desperate breakout is the direct cause of the city-wide commotion that greets Myra. He is now a fugitive, determined to find Ulcromite and return home within two years, even if it means tearing the core from his own arm.
     
 - **Osryn's Hunt:** **[[Osryn Marowar]]** continues his stalled quest for vengeance, working cases for [[Dagger & Gavel]]. The chaos of the prison break presents new opportunities and dangers, potentially shaking loose the very information he seeks.
+
+***
+
+### **Districts of Elarian Spire (Total Area: 500 sq mi)**
+
+*   **[[The Pit]] & [[Low Spire]] (124 sq mi):** The sprawling, densely packed slums and criminal underbelly of the city. Its chaotic, unplanned growth makes it the single largest district by area.
+*   **[[Smoke Alley]] (91 sq mi):** The vast industrial heartland, encompassing factories, smelters, and the **[[Foundry Ward]]**. Its massive facilities and storage yards consume a huge portion of the city.
+*   **[[The Spire (Elarion's Crown)]] (65 sq mi):** The central district containing the royal castle, government buildings, and the noble estates. Its spacious, planned layout reflects its wealth and importance.
+*   **[[The Ashfields]] (50 sq mi):** The mineral-rich badlands controlled by **[[House Hanada]]**, containing their forges, smelteries, and mining operations on the city's outskirts.
+*   **[[The Garrison]] (41 sq mi):** A dedicated military zone for barracks, training grounds, and war machine testing, requiring significant open space.
+*   **[[The Docks District]] (29 sq mi):** The harbor, canals, **[[Sundown Docks]]**, and all associated warehouses and trade offices, stretched along the city's waterfront.
+*   **[[The Garden District]] (36 sq mi):** A spacious, affluent residential area with parks and manor houses, prioritizing luxury over density.
+*   **[[The Grand Bazaar]] (25 sq mi):** A densely built-up commercial hub, a labyrinth of shops, inns, and markets, but limited in its overall footprint.
+*   **[[The Scholar's Enclave]] (20 sq mi):** A district of universities, libraries, and laboratories, including the secured complex of **[[The Aetherium]]**.
+*   **[[The Temple District]] (15 sq mi):** A relatively small but architecturally dense area dedicated to temples, shrines, and monastic quarters.
+*   **[[The Moss Tower]] (5 sq mi):** The prison fortress and its immediate, desolate surroundings. Its footprint is small, but its influence extends deep underground into the **[[Ulcromite Caverns]]**.
