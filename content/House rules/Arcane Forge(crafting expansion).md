@@ -1,4 +1,4 @@
-
+visit https://n3.kemono.cr/data/c2/e4/c2e4b6435a942504553fe6eec9bba4e2e9c36785211558de105a9b6dd382f330.pdf?f=09.+The+Arcane+Forge.pdf for a more detailed guide.
 
 ### **The Arcane Forge: A Masterwork Guide to Materials & Enchantments**
 
